@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 16px;
+}
+
+#snowflakeContainer {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+}
+
+.snowflake {
+	position: fixed;
+	background-color: white;
+	user-select: none;
+	z-index: 1000;
+	pointer-events: none;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.body_overflow-hidden {
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1000px;
+	padding: 0 10px;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+}
+
+.page_new-year {
+	min-height: 100%;
+	/* height: 100%; */
+	/* min-height: 100vh; */
+	background-image: url('./assets/img/new-year.55c67293.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.ornaments-container {
+	display: flex;
+	margin-left: 75px;
+}
+
+.ornament {
+	position: relative;
+	margin: auto;
+}
+
+.box {
+  float: left;
+  height: 20px;
+  width: 12px;
+  margin-bottom: 15px;
+	background-image: url(https://img.freepik.com/free-photo/roughly-gold-painted-concrete-wall-surface-background_53876-110786.jpg?t=st=1670358003~exp=1670358603~hmac=b29ac9b59292aef408ba148ba557966230871ad2185c685556e06b6a4244086c);
+  clear: both;
+}
+
+.ornament-icon {
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	margin: 0 20px;
+	background-color: #fff;
+	background-image: url(https://media.istockphoto.com/id/499462162/photo/red-glitter-paper-texture.jpg?s=612x612&w=0&k=20&c=rbj1vGKEDD36fdlL93IimfSQdO_iqo5wmSSwcsfq8cU=);
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	font: 700 30px sans-serif;
+	display: flex;
+	position: relative;
+	left: -43.67%;
+	top: 8px;
+	box-shadow: inset 0 0 10px #000a;
+	-webkit-animation: ring 4s .7s ease-in-out infinite;
+	-webkit-transform-origin: 50% 4px;
+	-moz-animation: ring 4s .7s ease-in-out infinite;
+	-moz-transform-origin: 50% 4px;
+	animation: ring 4s .7s ease-in-out infinite;
+	transform-origin: 50% 4px;
+}
+
+@-webkit-keyframes ring {
+	0% {
+		-webkit-transform: rotateZ(0);
+	}
+
+	1% {
+		-webkit-transform: rotateZ(30deg);
+	}
+
+	3% {
+		-webkit-transform: rotateZ(-28deg);
+	}
+
+	5% {
+		-webkit-transform: rotateZ(34deg);
+	}
+
+	7% {
+		-webkit-transform: rotateZ(-32deg);
+	}
+
+	9% {
+		-webkit-transform: rotateZ(30deg);
+	}
+
+	11% {
+		-webkit-transform: rotateZ(-28deg);
+	}
+
+	13% {
+		-webkit-transform: rotateZ(26deg);
+	}
+
+	15% {
+		-webkit-transform: rotateZ(-24deg);
+	}
+
+	17% {
+		-webkit-transform: rotateZ(22deg);
+	}
+
+	19% {
+		-webkit-transform: rotateZ(-20deg);
+	}
+
+	21% {
+		-webkit-transform: rotateZ(18deg);
+	}
+
+	23% {
+		-webkit-transform: rotateZ(-16deg);
+	}
+
+	25% {
+		-webkit-transform: rotateZ(14deg);
+	}
+
+	27% {
+		-webkit-transform: rotateZ(-12deg);
+	}
+
+	29% {
+		-webkit-transform: rotateZ(10deg);
+	}
+
+	31% {
+		-webkit-transform: rotateZ(-8deg);
+	}
+
+	33% {
+		-webkit-transform: rotateZ(6deg);
+	}
+
+	35% {
+		-webkit-transform: rotateZ(-4deg);
+	}
+
+	37% {
+		-webkit-transform: rotateZ(2deg);
+	}
+
+	39% {
+		-webkit-transform: rotateZ(-1deg);
+	}
+
+	41% {
+		-webkit-transform: rotateZ(1deg);
+	}
+
+	43% {
+		-webkit-transform: rotateZ(0);
+	}
+
+	100% {
+		-webkit-transform: rotateZ(0);
+	}
+}
+
+@-moz-keyframes ring {
+	0% {
+		-moz-transform: rotate(0);
+	}
+
+	1% {
+		-moz-transform: rotate(30deg);
+	}
+
+	3% {
+		-moz-transform: rotate(-28deg);
+	}
+
+	5% {
+		-moz-transform: rotate(34deg);
+	}
+
+	7% {
+		-moz-transform: rotate(-32deg);
+	}
+
+	9% {
+		-moz-transform: rotate(30deg);
+	}
+
+	11% {
+		-moz-transform: rotate(-28deg);
+	}
+
+	13% {
+		-moz-transform: rotate(26deg);
+	}
+
+	15% {
+		-moz-transform: rotate(-24deg);
+	}
+
+	17% {
+		-moz-transform: rotate(22deg);
+	}
+
+	19% {
+		-moz-transform: rotate(-20deg);
+	}
+
+	21% {
+		-moz-transform: rotate(18deg);
+	}
+
+	23% {
+		-moz-transform: rotate(-16deg);
+	}
+
+	25% {
+		-moz-transform: rotate(14deg);
+	}
+
+	27% {
+		-moz-transform: rotate(-12deg);
+	}
+
+	29% {
+		-moz-transform: rotate(10deg);
+	}
+
+	31% {
+		-moz-transform: rotate(-8deg);
+	}
+
+	33% {
+		-moz-transform: rotate(6deg);
+	}
+
+	35% {
+		-moz-transform: rotate(-4deg);
+	}
+
+	37% {
+		-moz-transform: rotate(2deg);
+	}
+
+	39% {
+		-moz-transform: rotate(-1deg);
+	}
+
+	41% {
+		-moz-transform: rotate(1deg);
+	}
+
+	43% {
+		-moz-transform: rotate(0);
+	}
+
+	100% {
+		-moz-transform: rotate(0);
+	}
+}
+
+@keyframes ring {
+	0% {
+		transform: rotate(0);
+	}
+
+	1% {
+		transform: rotate(30deg);
+	}
+
+	3% {
+		transform: rotate(-28deg);
+	}
+
+	5% {
+		transform: rotate(34deg);
+	}
+
+	7% {
+		transform: rotate(-32deg);
+	}
+
+	9% {
+		transform: rotate(30deg);
+	}
+
+	11% {
+		transform: rotate(-28deg);
+	}
+
+	13% {
+		transform: rotate(26deg);
+	}
+
+	15% {
+		transform: rotate(-24deg);
+	}
+
+	17% {
+		transform: rotate(22deg);
+	}
+
+	19% {
+		transform: rotate(-20deg);
+	}
+
+	21% {
+		transform: rotate(18deg);
+	}
+
+	23% {
+		transform: rotate(-16deg);
+	}
+
+	25% {
+		transform: rotate(14deg);
+	}
+
+	27% {
+		transform: rotate(-12deg);
+	}
+
+	29% {
+		transform: rotate(10deg);
+	}
+
+	31% {
+		transform: rotate(-8deg);
+	}
+
+	33% {
+		transform: rotate(6deg);
+	}
+
+	35% {
+		transform: rotate(-4deg);
+	}
+
+	37% {
+		transform: rotate(2deg);
+	}
+
+	39% {
+		transform: rotate(-1deg);
+	}
+
+	41% {
+		transform: rotate(1deg);
+	}
+
+	43% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(0);
+	}
+}
+
+/* .intro */
+
+.intro {
+	padding: 40px 0;
+}
+
+/* .container_intro {
+	height: 100%;
+} */
+
+.intro__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-family: fantasy;
+	font-size: 35px;
+	color: #fff;
+	font-weight: 700;
+}
+
+/* .intro */
+
+
+/* .calendar */
+
+.calendar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 1em;
+	font-size: 30px;
+}
+
+.calendar__day {
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 0.7em;
+	border: dashed rgba(100, 100, 100, 1) 0.125em;
+	cursor: pointer;
+	height: 185px;
+	user-select: none;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, transform;
+}
+
+.calendar__day.disabled:hover:not(.calendar__day_active) {
+	pointer-events: none;
+}
+
+.calendar__day:hover:not(.calendar__day_active),
+.calendar__day:hover:not(.disabled) {
+	background-color: rgba(0, 0, 0, 0.8);
+	transform: scale(1.1);
+}
+
+.calendar__day .calendar__day-preview {
+	color: white;
+}
+
+.calendar__day_active {
+	cursor: auto;
+	user-select: auto;
+	padding: 0;
+}
+
+.calendar__day_active .calendar__day-preview {
+	display: none;
+}
+
+.calendar__day_active .calendar__popup {
+	display: block;
+}
+
+.calendar__popup {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.calendar {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* .calendar */
+
+
+/* .popup */
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	visibility: hidden;
+	opacity: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.4s;
+	transition-property: opacity, visibility;
+}
+
+.popup_open {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup__close {
+	color: #aaa;
+	cursor: pointer;
+	font-size: 28px;
+	position: absolute;
+	right: 15px;
+}
+
+.popup__body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 30px;
+}
+
+.popup__content {
+	max-width: 800px;
+	width: 100%;
+	background-color: white;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+	position: relative;
+}
+
+.popup__title {
+	margin: 0;
+}
+
+.popup__description {
+	margin: 0;
+	padding: 0 10px;
+	font-size: 14px;
+	background-color: white;
+	color: black;
+	font-family: sans-serif;
+}
+
+.calendar__popup-img {
+	aspect-ratio: 16/9;
+}
+
+.calendar__popup-description {
+	padding: 10px;
+	overflow-wrap: break-word;
+	background-color: white;
+	color: black;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	height: 85px
+}
+
+/* .popup */
